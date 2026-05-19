@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RAGent 智能工作台
 
 > 一站式 AI 前端应用：CSV 数据可视化 + RAG 知识库问答 + Agent 多步任务编排
@@ -137,4 +136,3 @@ MIT © [Valentina0325](https://github.com/Valentina0325)
 *如有问题或建议，欢迎提交 Issue 或联系 3641130398@qq.com*
 =======
 
->>>>>>> 2aa1dfdb11afe5157eaf32cb6ef88d14c2df7168

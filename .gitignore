@@ -1,0 +1,19 @@
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+frontend/out/
+
+# Python
+backend/__pycache__/
+backend/.env
+backend/chroma_db/   # 向量数据库文件夹（体积大，不提交）
+backend/chunks.json  # 临时生成文件，可选忽略
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

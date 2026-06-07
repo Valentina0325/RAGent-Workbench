@@ -127,9 +127,5 @@ RAGent-Workbench/
 
 ---
 
-## 📄 License
-
- - MIT © [Valentina0325](https://github.com/Valentina0325)
-
 ---
 

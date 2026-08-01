@@ -131,4 +131,7 @@ RAGent-Workbench/
 
  - MIT © [Valentina0325](https://github.com/Valentina0325)
 
+<<<<<<< HEAD
+---
+=======
 ---

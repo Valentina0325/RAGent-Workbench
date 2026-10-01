@@ -224,7 +224,3 @@ SSE 事件类型：`intent` / `status` / `sources` / `plan` / `step_start` / `st
 - [Next.js](https://nextjs.org/) · [React](https://react.dev/) · [ECharts](https://echarts.apache.org/) · [FastAPI](https://fastapi.tiangolo.com/)
 
 ---
-
-## 📄 License
-
-MIT © [Valentina0325](https://github.com/Valentina0325)

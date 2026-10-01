@@ -3,12 +3,25 @@ frontend/node_modules/
 frontend/.next/
 frontend/.env.local
 frontend/out/
+frontend/.next_old_*/
+frontend/.next_trash_*/
+frontend/tsconfig.tsbuildinfo
+frontend/frontend_dev.log
 
 # Python
 backend/__pycache__/
 backend/.env
-backend/chroma_db/   # 向量数据库文件夹（体积大，不提交）
-backend/chunks.json  # 临时生成文件，可选忽略
+backend/model_cache/   # 本地嵌入模型缓存（约 1.3GB，不提交）
+backend/chroma_db/     # 向量数据库文件夹（体积大，不提交）
+backend/chunks.json    # 临时生成文件，可选忽略
+backend/*.log          # uvicorn 等日志
+backend/test/          # 测试产物
+backend/test_upload.txt
+
+# 本地工作区 / 杂项
+.workbuddy/            # WorkBuddy 项目级记忆与配置（本地）
+_ports.txt
+*.tmp
 
 # IDE
 .vscode/

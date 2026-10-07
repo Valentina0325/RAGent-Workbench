@@ -1,32 +1,38 @@
-# Node
+# ========== Node / 前端 ==========
 frontend/node_modules/
 frontend/.next/
-frontend/.env.local
 frontend/out/
+frontend/.env.local
+frontend/tsconfig.tsbuildinfo
 frontend/.next_old_*/
 frontend/.next_trash_*/
-frontend/tsconfig.tsbuildinfo
 frontend/frontend_dev.log
 
-# Python
+# ========== Python / 后端 ==========
 backend/__pycache__/
+# 本地密钥（含 ZHIPU_API_KEY，切勿提交）
 backend/.env
-backend/model_cache/   # 本地嵌入模型缓存（约 1.3GB，不提交）
-backend/chroma_db/     # 向量数据库文件夹（体积大，不提交）
-backend/chunks.json    # 临时生成文件，可选忽略
-backend/*.log          # uvicorn 等日志
-backend/test/          # 测试产物
+# 本地嵌入模型缓存（约 1.3GB，不提交）
+backend/model_cache/
+# 向量数据库文件夹（体积大，不提交）
+backend/chroma_db/
+# 临时生成文件
+backend/chunks.json
+backend/*.log
 backend/test_upload.txt
+# 测试产物（按需可放开）
+backend/test/
 
-# 本地工作区 / 杂项
-.workbuddy/            # WorkBuddy 项目级记忆与配置（本地）
+# ========== 本地工作区 / 杂项 ==========
+# WorkBuddy 项目级记忆与配置（本地，不提交）
+.workbuddy/
 _ports.txt
 *.tmp
 
-# IDE
+# ========== IDE ==========
 .vscode/
 .idea/
 
-# OS
+# ========== OS ==========
 .DS_Store
 Thumbs.db

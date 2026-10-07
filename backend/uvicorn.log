@@ -1,0 +1,15 @@
+D:\ch4\pyt\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 6735.53it/s]
+INFO:     Started server process [30756]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+✅ 从本地缓存加载 Embedding 模型成功: ./model_cache/models/AI-ModelScope--bge-large-zh-v1.5/snapshots/master
+✅ 加载了 9 个文档片段（默认知识库）
+INFO:     127.0.0.1:52617 - "GET /kb/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52622 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55221 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58885 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52179 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54218 - "POST /chat/stream HTTP/1.1" 200 OK

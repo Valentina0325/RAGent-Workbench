@@ -208,11 +208,6 @@ SSE 事件类型：`intent` / `status` / `sources` / `plan` / `step_start` / `st
 - **ChromaDB 中文集合名**：用 hex 编码解决限制（`_safe_name` / `_display_name` 双向映射）
 - **CSV 数据上传**：前端最多取前 2000 行传给后端做真实统计
 
----
-
-## 🧪 演示
-
-- [3 分钟操作录屏](https://pan.baidu.com/s/1463jjyuxB1ZKbs7DdWY4rA?pwd=1234)（提取码：1234）
 
 ---
 

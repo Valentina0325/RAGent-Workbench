@@ -9,7 +9,8 @@ frontend/.next_trash_*/
 frontend/frontend_dev.log
 
 # ========== Python / 后端 ==========
-backend/__pycache__/
+__pycache__/
+*.pyc
 # 本地密钥（含 ZHIPU_API_KEY，切勿提交）
 backend/.env
 # 本地嵌入模型缓存（约 1.3GB，不提交）

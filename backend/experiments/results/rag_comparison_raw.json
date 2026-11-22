@@ -1,0 +1,569 @@
+{
+  "model": "glm-4-flash",
+  "generated_at": "2026-11-22T21:55:18.426083",
+  "records": [
+    {
+      "id": "K01",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "这份运维SOP的文档编号是什么？",
+      "keywords": [
+        [
+          "KB-IT-2026-08-30"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:04",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 2.11,
+      "routed_to_rag": true,
+      "answer_no_rag": "请提供文档的具体名称或相关信息，以便我能够准确找到对应的文档编号。",
+      "sec_no_rag": 1.421,
+      "error_no_rag": "",
+      "answer_rag": "文档编号是 KB-IT-2026-08-30。",
+      "sec_rag": 3.37,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/1",
+      "points_rag": "1/1",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K02",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "文档要求的故障恢复SLA承诺时间是多少？",
+      "keywords": [
+        [
+          "15分钟",
+          "15 分钟"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:09",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.22,
+      "routed_to_rag": true,
+      "answer_no_rag": "需要具体文档内容或系统名称才能提供准确的故障恢复SLA承诺时间。请提供相关信息。",
+      "sec_no_rag": 2.88,
+      "error_no_rag": "",
+      "answer_rag": "文档要求的故障恢复SLA承诺时间是15分钟内完成故障定位与恢复。",
+      "sec_rag": 2.288,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/1",
+      "points_rag": "1/1",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K03",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "黄金指标包括哪四类？",
+      "keywords": [
+        [
+          "延迟"
+        ],
+        [
+          "流量"
+        ],
+        [
+          "错误"
+        ],
+        [
+          "饱和度"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:14",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.21,
+      "routed_to_rag": true,
+      "answer_no_rag": "黄金指标包括：价格指标、供需指标、市场情绪指标和宏观经济指标。",
+      "sec_no_rag": 1.345,
+      "error_no_rag": "",
+      "answer_rag": "黄金指标包括延迟、流量、错误和饱和度这四类。",
+      "sec_rag": 1.391,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/4",
+      "points_rag": "4/4",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K04",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "P0级故障的定义示例是什么？",
+      "keywords": [
+        [
+          "全链路超时"
+        ],
+        [
+          "90%"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:17",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.207,
+      "routed_to_rag": true,
+      "answer_no_rag": "P0级故障是指系统无法正常工作，导致业务完全中断的严重故障。例如，数据中心服务器集群完全宕机，导致所有在线服务都无法访问。",
+      "sec_no_rag": 2.364,
+      "error_no_rag": "",
+      "answer_rag": "P0级故障的定义示例包括全链路超时，下单成功率低于90%等情况。这类故障通常指核心业务完全瘫痪，需要立即启动紧急回滚来恢复系统正常运行。",
+      "sec_rag": 3.519,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/2",
+      "points_rag": "2/2",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K05",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "应急工具包本地需要安装哪些工具？",
+      "keywords": [
+        [
+          "curl"
+        ],
+        [
+          "dig"
+        ],
+        [
+          "tcpdump"
+        ],
+        [
+          "arthas"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:23",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.169,
+      "routed_to_rag": true,
+      "answer_no_rag": "应急工具包通常需要安装以下工具：\n\n1. 磁盘修复工具：如DiskGenius、MiniTool Partition Wizard等。\n2. 系统备份与还原工具：如Windows系统自带的系统备份工具、EaseUS Todo Backup等。\n3. 系统修复工具：如Windows PE、Windows安装盘、EasyRE等。\n4. 病毒查杀工具：如腾讯电脑管家、360安全卫士等。\n5. 系统优化工具：如Windows优化大师、CCleaner等。\n6. 网络诊断工具：如Wireshark、Fiddler等。\n7. 数据恢复工具：如EaseUS Data Recovery Wizard、Wondershare Data Recovery等。\n8. 文件压缩工具：如WinRAR、7-Zip等。\n9. 文本编辑器：如Notepad++、Sublime Text等。\n10. 编程开发工具：如Visual Studio、Eclipse等（根据需要）。\n\n具体需要安装哪些工具，要根据实际情况和需求来定。",
+      "sec_no_rag": 8.269,
+      "error_no_rag": "",
+      "answer_rag": "应急工具包本地需要安装的工具包括curl、dig、tcpdump和arthas。",
+      "sec_rag": 2.021,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/4",
+      "points_rag": "4/4",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K06",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "Redis连接超时的常见根因和解决方法是什么？",
+      "keywords": [
+        [
+          "连接池泄露",
+          "连接池"
+        ],
+        [
+          "maxclients"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:33",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.203,
+      "routed_to_rag": true,
+      "answer_no_rag": "常见原因：\n1. 网络问题：网络不稳定或延迟过高。\n2. Redis配置不当：连接超时设置过短。\n3. Redis服务器负载过高：处理请求速度慢。\n4. 客户端连接数过多：超过Redis的最大连接数。\n\n解决方法：\n1. 检查网络：确保网络稳定，降低延迟。\n2. 调整配置：增加连接超时时间或增加最大连接数。\n3. 优化Redis：优化Redis配置，提高处理速度。\n4. 限制连接数：限制客户端连接数，避免超过最大连接数。",
+      "sec_no_rag": 6.905,
+      "error_no_rag": "",
+      "answer_rag": "Redis连接超时的常见根因可能是连接池泄露，即应用长时间未释放连接，导致连接数耗尽。解决方法包括重启应用以释放连接池，或者增加`maxclients`参数以扩大连接池大小。具体操作可以使用`redis-cli -h [host] CLIENT LIST | wc -l`命令来检查连接池状态，若发现问题，则需采取相应的措施。",
+      "sec_rag": 5.06,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/2",
+      "points_rag": "2/2",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K07",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "故障排查超过阈值后，K8s环境如何回滚到稳定版本？",
+      "keywords": [
+        [
+          "kubectl rollout undo"
+        ],
+        [
+          "deployment"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:45",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.175,
+      "routed_to_rag": true,
+      "answer_no_rag": "1. 确定要回滚的稳定版本。\n2. 停止向集群部署新版本的应用。\n3. 使用`kubectl`命令行工具执行以下命令进行回滚：\n   ```bash\n   kubectl rollout undo deployment <deployment-name> --to-revision=<revision-number>\n   ```\n   其中`<deployment-name>`是部署名称，`<revision-number>`是希望回滚到的版本号。\n4. 检查回滚状态，确保应用已成功回滚到稳定版本。\n5. 监控系统性能，确认问题已解决。",
+      "sec_no_rag": 5.178,
+      "error_no_rag": "",
+      "answer_rag": "在K8s环境中，当故障排查超过设定的阈值后，为了快速恢复服务，应执行无损回滚操作回到上一个稳定版本。具体操作步骤如下：\n\n1. 使用以下命令回滚到指定部署的上一个稳定版本：\n   ```\n   kubectl rollout undo deployment/[deployment_name] -n [namespace]\n   ```\n   其中，`[deployment_name]` 是需要回滚的部署名称，`[namespace]` 是部署所在的命名空间。\n\n2. 使用以下命令观察回滚状态：\n   ```\n   kubectl rollout status deployment/[deployment_name] -n [namespace]\n   ```\n\n通过这些命令，可以实现对K8s环境的快速回滚操作。",
+      "sec_rag": 5.104,
+      "error_rag": "",
+      "accuracy_no_rag": 1.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "2/2",
+      "points_rag": "2/2",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K08",
+      "kb": "项目",
+      "category": "knowledge",
+      "question": "5-Whys分析中，数据库连接超时的直接原因是什么？",
+      "keywords": [
+        [
+          "连接数满",
+          "连接数"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:55",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.165,
+      "routed_to_rag": true,
+      "answer_no_rag": "数据库连接超时的直接原因是网络延迟或数据库服务器响应缓慢。",
+      "sec_no_rag": 1.16,
+      "error_no_rag": "",
+      "answer_rag": "数据库连接超时的直接原因是连接数满了。",
+      "sec_rag": 1.2,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/1",
+      "points_rag": "1/1",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K09",
+      "kb": "Agent",
+      "category": "knowledge",
+      "question": "ChromaDB适合什么场景？它支持什么向量索引算法？",
+      "keywords": [
+        [
+          "HNSW"
+        ],
+        [
+          "嵌入式",
+          "本地开发"
+        ]
+      ],
+      "run_at": "2026-11-22T21:53:58",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.221,
+      "routed_to_rag": true,
+      "answer_no_rag": "ChromaDB适合的场景包括：\n\n1. 大规模数据存储和分析\n2. 智能搜索和推荐系统\n3. 图像和视频内容分析\n4. 自然语言处理和文本分析\n5. 生物信息学和基因组学\n\nChromaDB支持的向量索引算法包括：\n\n1. FAISS（Facebook AI Similarity Search）\n2. Annoy（Approximate Nearest Neighbors Oh Yeah）\n3. HNSW（Hierarchical Navigable Small World）",
+      "sec_no_rag": 3.693,
+      "error_no_rag": "",
+      "answer_rag": "ChromaDB适合需要快速检索和过滤向量数据的场景，特别适合本地开发和轻量级部署的AI应用。它支持多种向量索引算法，如HNSW，可以高效地处理存储、检索和过滤向量数据的需求。",
+      "sec_rag": 2.498,
+      "error_rag": "",
+      "accuracy_no_rag": 0.5,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "1/2",
+      "points_rag": "2/2",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K10",
+      "kb": "Agent",
+      "category": "knowledge",
+      "question": "混合检索（Hybrid Search）是如何工作的？",
+      "keywords": [
+        [
+          "向量"
+        ],
+        [
+          "关键词",
+          "BM25"
+        ],
+        [
+          "权重",
+          "合并排序"
+        ]
+      ],
+      "run_at": "2026-11-22T21:54:04",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.169,
+      "routed_to_rag": true,
+      "answer_no_rag": "混合检索（Hybrid Search）是一种结合了传统搜索和现代搜索技术的检索方式。它通常包括以下几个步骤：\n\n1. **数据融合**：将来自不同来源的数据（如数据库、搜索引擎、文件系统等）整合到一个统一的检索系统中。\n\n2. **检索策略**：制定检索策略，根据用户需求选择合适的检索方法和算法。\n\n3. **信息检索**：\n   - **传统搜索**：使用关键词匹配、布尔逻辑查询等传统方法进行检索。\n   - **现代搜索**：利用自然语言处理、机器学习等技术，对文本进行深度理解，提取语义信息。\n\n4. **结果融合**：将来自不同来源的检索结果进行整合，通常包括排序、去重等步骤。\n\n5. **展示与交互**：将整合后的检索结果以用户友好的方式展示，并提供交互功能，如筛选、排序等。\n\n混合检索的优势在于能够充分利用不同检索技术的优势，提高检索的准确性和效率。",
+      "sec_no_rag": 8.36,
+      "error_no_rag": "",
+      "answer_rag": "混合检索（Hybrid Search）是一种结合了向量检索和关键词检索的技术。首先，它使用向量检索，也就是通过计算查询向量和文档向量之间的相似度，来找到最相关的文档片段。这个过程侧重于语义相似度的理解，能够跨越词汇的不同用词或语境。接着，混合检索还会使用关键词检索，比如使用BM25算法，根据关键词在文档中的频率和重要性来评估文档与查询的相关性。\n\n两种检索的结果会按照一定权重合并，排序后的结果既考虑了语义理解，又考虑了关键词的精确匹配。这样做的优点是能够在保证检索准确性的同时，提高检索的效率。例如，当用户查询一个概念时，混合检索可能会返回既有高度语义相似度又有关键词匹配度的文档片段，从而提供更全面和准确的信息。",
+      "sec_rag": 7.464,
+      "error_rag": "",
+      "accuracy_no_rag": 0.3333,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "1/3",
+      "points_rag": "3/3",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K11",
+      "kb": "Agent",
+      "category": "knowledge",
+      "question": "GLM-4-Flash模型的上下文窗口有多大？",
+      "keywords": [
+        [
+          "128K",
+          "128k"
+        ]
+      ],
+      "run_at": "2026-11-22T21:54:20",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.165,
+      "routed_to_rag": true,
+      "answer_no_rag": "GLM-4-Flash模型的上下文窗口大小为2048个token。",
+      "sec_no_rag": 1.738,
+      "error_no_rag": "",
+      "answer_rag": "GLM-4-Flash模型的上下文窗口支持128K的上下文窗口。",
+      "sec_rag": 1.397,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/1",
+      "points_rag": "1/1",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "K12",
+      "kb": "Agent",
+      "category": "knowledge",
+      "question": "构建RAG系统时，文档切片需要注意哪些要点？",
+      "keywords": [
+        [
+          "256-512",
+          "256"
+        ],
+        [
+          "重叠",
+          "overlap"
+        ],
+        [
+          "元数据"
+        ]
+      ],
+      "run_at": "2026-11-22T21:54:23",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.184,
+      "routed_to_rag": true,
+      "answer_no_rag": "构建RAG系统时，文档切片需要注意以下要点：\n\n1. **切片粒度**：选择合适的切片粒度，既不能太大导致信息丢失，也不能太小导致切片过多，影响效率。\n2. **内容完整性**：确保每个切片包含足够的信息，以便能够回答相关问题。\n3. **相关性**：切片内容应与查询主题高度相关，避免无关信息的干扰。\n4. **可检索性**：切片应便于检索，以便快速定位到所需信息。\n5. **一致性**：切片的格式和结构应保持一致，方便处理和存储。\n6. **可扩展性**：设计时应考虑系统的可扩展性，以便未来添加更多文档或调整切片策略。\n7. **避免冗余**：尽量减少重复信息的切片，提高效率。\n8. **语言和文化适应性**：考虑不同语言和文化背景下的文档切片需求。",
+      "sec_no_rag": 7.686,
+      "error_no_rag": "",
+      "answer_rag": "构建RAG系统时，文档切片需要注意以下要点：\n\n1. 切片尺寸：通常应控制在256-512个token范围内，以确保有效捕捉文档的关键信息。\n\n2. 避免语义断裂：在切片时要注意重叠窗口的使用，以避免因切片导致语义上的断裂。\n\n3. 保留元数据：确保在切片过程中保留文档的来源、页码等元数据信息。\n\n4. 上下文管理：在多轮对话中，要有效管理上下文，确保用户的历史查询和系统之前的回答能够连贯地影响后续的生成过程。\n\n5. 检索结果排序与融合：在检索过程中，要考虑检索结果的排序和融合策略，以提高检索的准确性和相关性。",
+      "sec_rag": 7.574,
+      "error_rag": "",
+      "accuracy_no_rag": 0.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "0/3",
+      "points_rag": "3/3",
+      "citation_hit": true,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "I01",
+      "kb": "项目",
+      "category": "irrelevant",
+      "question": "牙痛需要注意什么？",
+      "keywords": [],
+      "run_at": "2026-11-22T21:54:38",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.141,
+      "routed_to_rag": false,
+      "answer_no_rag": "牙痛时需要注意以下几点：\n1. 保持口腔清洁，避免食用刺激性食物。\n2. 避免咀嚼患侧，减轻疼痛。\n3. 如有肿胀，可冷敷局部。\n4. 可使用非处方止痛药缓解疼痛。\n5. 尽快就医，找出病因，进行治疗。",
+      "sec_no_rag": 2.428,
+      "error_no_rag": "",
+      "answer_rag": "牙痛时需要注意以下几点：\n1. 保持口腔清洁，避免食用辛辣、过冷过热等刺激性食物。\n2. 如有龋齿或牙周病，及时就医。\n3. 避免咀嚼硬物，以防加重牙痛。\n4. 若疼痛剧烈，可使用止疼药物缓解，但最好在医生指导下使用。\n5. 注意休息，避免过度劳累。",
+      "sec_rag": 2.73,
+      "error_rag": "",
+      "accuracy_no_rag": null,
+      "accuracy_rag": null,
+      "points_no_rag": "-",
+      "points_rag": "-",
+      "citation_hit": null,
+      "hallucination_no_rag": false,
+      "hallucination_rag": false,
+      "route_correct": true
+    },
+    {
+      "id": "I02",
+      "kb": "项目",
+      "category": "irrelevant",
+      "question": "减脂期，晚饭怎么吃比较合适？",
+      "keywords": [],
+      "run_at": "2026-11-22T21:54:43",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.15,
+      "routed_to_rag": false,
+      "answer_no_rag": "减脂期晚饭建议选择低热量、高蛋白、高纤维的食物，如蔬菜、瘦肉、豆制品等。适量摄入，避免过于油腻和高糖食品。建议晚餐时间提前，以减少夜间能量消耗。例如，可以吃一碗蔬菜沙拉（橄榄油调味）、一份清蒸鱼或煮鸡胸肉，搭配一小碗糙米饭或全麦面包。",
+      "sec_no_rag": 3.035,
+      "error_no_rag": "",
+      "answer_rag": "减脂期晚饭建议以低热量、高蛋白、高纤维为主，可适量搭配蔬菜和全谷物。以下是一些建议：\n\n1. **蛋白质**：鸡胸肉、鱼、豆腐、鸡蛋等。\n2. **蔬菜**：绿叶蔬菜、西兰花、胡萝卜、西红柿等。\n3. **全谷物**：糙米、燕麦、红薯等。\n4. **低脂调味品**：柠檬汁、醋、少量橄榄油等。\n\n避免高糖、高脂肪、高热量的食物，如油炸食品、甜点、饮料等。晚餐时间建议在睡前3-4小时，避免过晚进食。",
+      "sec_rag": 4.788,
+      "error_rag": "",
+      "accuracy_no_rag": null,
+      "accuracy_rag": null,
+      "points_no_rag": "-",
+      "points_rag": "-",
+      "citation_hit": null,
+      "hallucination_no_rag": false,
+      "hallucination_rag": false,
+      "route_correct": true
+    },
+    {
+      "id": "I03",
+      "kb": "Agent",
+      "category": "irrelevant",
+      "question": "番茄可以生吃吗？",
+      "keywords": [],
+      "run_at": "2026-11-22T21:54:51",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.123,
+      "routed_to_rag": false,
+      "answer_no_rag": "可以生吃。番茄生吃时含有丰富的维生素C和番茄红素，对健康有益。但需要注意的是，未成熟的番茄可能含有较多的生物碱，口感不佳，且对胃部刺激较大，建议选择成熟的番茄食用。",
+      "sec_no_rag": 3.16,
+      "error_no_rag": "",
+      "answer_rag": "可以生吃，但建议选择成熟、无病虫害的番茄，并清洗干净后再食用。未成熟的番茄生吃口感不佳，且可能含有较多的生物碱，对消化系统有一定刺激。",
+      "sec_rag": 1.757,
+      "error_rag": "",
+      "accuracy_no_rag": null,
+      "accuracy_rag": null,
+      "points_no_rag": "-",
+      "points_rag": "-",
+      "citation_hit": null,
+      "hallucination_no_rag": false,
+      "hallucination_rag": false,
+      "route_correct": true
+    },
+    {
+      "id": "I04",
+      "kb": "Agent",
+      "category": "irrelevant",
+      "question": "失眠应该怎么调理？",
+      "keywords": [],
+      "run_at": "2026-11-22T21:54:56",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.14,
+      "routed_to_rag": false,
+      "answer_no_rag": "1. 保持规律的作息时间；\n2. 避免晚上使用电子产品；\n3. 保持室内适宜的温度和湿度；\n4. 避免饮用咖啡、茶等刺激性饮料；\n5. 增加白天的户外活动；\n6. 尝试放松技巧，如深呼吸、冥想；\n7. 如有需要，可咨询医生或心理医生。",
+      "sec_no_rag": 2.888,
+      "error_no_rag": "",
+      "answer_rag": "1. 保持规律的作息时间；\n2. 避免咖啡因、酒精等刺激性物质；\n3. 晚餐不宜过饱，少吃油腻食物；\n4. 放松身心，如深呼吸、冥想等；\n5. 房间保持适宜的温度和光线；\n6. 可适当运动，但避免睡前剧烈运动；\n7. 调整睡眠环境，如使用舒适的床和枕头；\n8. 如有需要，可咨询医生使用安眠药。",
+      "sec_rag": 3.749,
+      "error_rag": "",
+      "accuracy_no_rag": null,
+      "accuracy_rag": null,
+      "points_no_rag": "-",
+      "points_rag": "-",
+      "citation_hit": null,
+      "hallucination_no_rag": false,
+      "hallucination_rag": false,
+      "route_correct": true
+    },
+    {
+      "id": "G01",
+      "kb": "项目",
+      "category": "general",
+      "question": "Python中列表和元组的主要区别是什么？",
+      "keywords": [
+        [
+          "可变"
+        ],
+        [
+          "不可变",
+          "元组"
+        ]
+      ],
+      "run_at": "2026-11-22T21:55:03",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.154,
+      "routed_to_rag": false,
+      "answer_no_rag": "Python中列表和元组的主要区别包括：\n\n1. **可变性**：列表是可变的，可以修改其内容（如添加、删除元素），而元组是不可变的，一旦创建，其内容就不能被修改。\n2. **括号**：列表使用方括号`[]`，元组使用圆括号`()`。\n3. **性能**：元组通常比列表更高效，因为它们是不可变的，Python可以优化元组的存储和访问。\n4. **用途**：通常列表用于需要频繁修改数据的情况，而元组用于存储不可变的数据，如函数的参数、字典的键等。",
+      "sec_no_rag": 4.939,
+      "error_no_rag": "",
+      "answer_rag": "Python中列表和元组的主要区别包括：\n\n1. **可变性**：列表是可变的，可以修改其元素；元组是不可变的，一旦创建，其元素就不能更改。\n2. **使用场景**：列表适合用于需要频繁修改元素的情况，而元组适合用于存储那些一旦创建就不需要修改的数据。\n3. **括号**：列表使用方括号`[]`表示，元组使用圆括号`()`表示（尽管在Python 3中，圆括号也可用于创建列表）。\n4. **性能**：元组通常比列表更节省内存，因为它们是不可变的，Python可以优化存储。\n5. **初始化**：列表可以很容易地通过方括号和逗号来初始化，而元组初始化时需要使用圆括号，并且元素之间用逗号分隔。",
+      "sec_rag": 7.086,
+      "error_rag": "",
+      "accuracy_no_rag": 1.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "2/2",
+      "points_rag": "2/2",
+      "citation_hit": false,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    },
+    {
+      "id": "G02",
+      "kb": "Agent",
+      "category": "general",
+      "question": "HTTP状态码404表示什么？",
+      "keywords": [
+        [
+          "找不到",
+          "不存在",
+          "未找到"
+        ]
+      ],
+      "run_at": "2026-11-22T21:55:15",
+      "retrieved_chunks": 3,
+      "retrieve_sec": 0.135,
+      "routed_to_rag": false,
+      "answer_no_rag": "HTTP状态码404表示“未找到”，即服务器上无法找到请求的资源。",
+      "sec_no_rag": 1.465,
+      "error_no_rag": "",
+      "answer_rag": "HTTP状态码404表示“未找到”，即请求的资源在服务器上不存在。",
+      "sec_rag": 1.665,
+      "error_rag": "",
+      "accuracy_no_rag": 1.0,
+      "accuracy_rag": 1.0,
+      "points_no_rag": "1/1",
+      "points_rag": "1/1",
+      "citation_hit": false,
+      "hallucination_no_rag": null,
+      "hallucination_rag": null,
+      "route_correct": true
+    }
+  ]
+}

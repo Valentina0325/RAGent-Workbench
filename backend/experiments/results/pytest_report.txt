@@ -1,0 +1,57 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0 -- D:\ch4\pyt\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.9', 'Platform': 'Windows-11-10.0.26200-SP0', 'Packages': {'pytest': '9.1.0', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.13.0', 'dependency': '0.6.1', 'html': '4.2.0', 'metadata': '3.1.1'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk1.8.0_172'}
+rootdir: D:\ch4\Efficient\RAGent-Workbench\backend
+plugins: anyio-4.13.0, dependency-0.6.1, html-4.2.0, metadata-3.1.1
+collecting ... collected 33 items
+
+tests/test_core_modules.py::TestChunking::test_chunk_basic PASSED        [  3%]
+tests/test_core_modules.py::TestChunking::test_chunk_respects_sentence_boundary PASSED [  6%]
+tests/test_core_modules.py::TestChunking::test_chunk_overlap PASSED      [  9%]
+tests/test_core_modules.py::TestChunking::test_chunk_empty PASSED        [ 12%]
+tests/test_core_modules.py::TestChunking::test_chunk_long_sentence_hard_split PASSED [ 15%]
+tests/test_core_modules.py::TestKBNameCodec::test_safe_name_roundtrip[\u9879\u76ee] PASSED [ 18%]
+tests/test_core_modules.py::TestKBNameCodec::test_safe_name_roundtrip[Agent] PASSED [ 21%]
+tests/test_core_modules.py::TestKBNameCodec::test_safe_name_roundtrip[\u6211\u7684\u77e5\u8bc6\u5e93] PASSED [ 24%]
+tests/test_core_modules.py::TestKBNameCodec::test_safe_name_roundtrip[test-kb_1] PASSED [ 27%]
+tests/test_core_modules.py::TestKBNameCodec::test_chinese_name_is_hex_encoded PASSED [ 30%]
+tests/test_core_modules.py::TestHybridRetrieval::test_normalize_range PASSED [ 33%]
+tests/test_core_modules.py::TestHybridRetrieval::test_normalize_constant_array PASSED [ 36%]
+tests/test_core_modules.py::TestHybridRetrieval::test_weight_formula PASSED [ 39%]
+tests/test_core_modules.py::TestRAGRouter::test_relevant_question_hits PASSED [ 42%]
+tests/test_core_modules.py::TestRAGRouter::test_irrelevant_question_not_hits PASSED [ 45%]
+tests/test_core_modules.py::TestRAGRouter::test_empty_context_not_hits PASSED [ 48%]
+tests/test_core_modules.py::TestRAGRouter::test_content_words_filter PASSED [ 51%]
+tests/test_core_modules.py::TestRAGRouter::test_real_kb_routing PASSED   [ 54%]
+tests/test_core_modules.py::TestDataFacts::test_numeric_column_stats PASSED [ 57%]
+tests/test_core_modules.py::TestDataFacts::test_text_column_stats PASSED [ 60%]
+tests/test_core_modules.py::TestDataFacts::test_format_contains_key_numbers PASSED [ 63%]
+tests/test_core_modules.py::TestDataFacts::test_empty_ctx_returns_none PASSED [ 66%]
+tests/test_core_modules.py::TestUtilities::test_parse_txt_utf8 PASSED    [ 69%]
+tests/test_core_modules.py::TestUtilities::test_parse_txt_gbk PASSED     [ 72%]
+tests/test_core_modules.py::TestUtilities::test_get_current_time_has_weekday PASSED [ 75%]
+tests/test_core_modules.py::TestUtilities::test_extract_day[\u4eca\u5929\u5929\u6c14-today] PASSED [ 78%]
+tests/test_core_modules.py::TestUtilities::test_extract_day[\u660e\u5929\u5929\u6c14\u600e\u4e48\u6837-tomorrow] PASSED [ 81%]
+tests/test_core_modules.py::TestUtilities::test_extract_day[\u540e\u5929\u4f1a\u4e0b\u96e8\u5417-day_after_tomorrow] PASSED [ 84%]
+tests/test_core_modules.py::TestUtilities::test_extract_day[\u73b0\u5728\u5929\u6c14-today] PASSED [ 87%]
+tests/test_core_modules.py::TestUtilities::test_extract_city PASSED      [ 90%]
+tests/test_core_modules.py::TestAPIEndpoints::test_health PASSED         [ 93%]
+tests/test_core_modules.py::TestAPIEndpoints::test_kb_list PASSED        [ 96%]
+tests/test_core_modules.py::TestAPIEndpoints::test_kb_docs PASSED        [100%]
+
+============================== warnings summary ===============================
+..\..\..\pyt\Lib\site-packages\jieba\_compat.py:18
+  D:\ch4\pyt\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+    import pkg_resources
+
+tests/test_core_modules.py::TestAPIEndpoints::test_health
+  D:\ch4\pyt\Lib\site-packages\_pytest\fixtures.py:1312: PytestRemovedIn10Warning: Class-scoped fixture defined as instance method is deprecated.
+  Instance attributes set in this fixture will NOT be visible to test methods,
+  as each test gets a new instance while the fixture runs only once per class.
+  Use @classmethod decorator and set attributes on cls instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#class-scoped-fixture-as-instance-method
+    fixturefunc = resolve_fixture_function(fixturedef, request)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 33 passed, 2 warnings in 16.06s =======================

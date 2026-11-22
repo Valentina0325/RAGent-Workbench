@@ -1,0 +1,93 @@
+D:\ch4\pyt\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4096.93it/s]
+Building prefix dict from the default dictionary ...
+Dumping model to file cache C:\Users\mei\AppData\Local\Temp\jieba.cache
+Loading model cost 0.689 seconds.
+Prefix dict has been built successfully.
+✅ 从本地缓存加载 Embedding 模型成功: ./model_cache/models/AI-ModelScope--bge-large-zh-v1.5/snapshots/master
+✅ 加载了 9 个文档片段（默认知识库）
+======================================================================
+有/无 RAG 对比实验开始（每题调用智谱 API 两次，请耐心等待）
+======================================================================
+[OK] K01 knowledge  路由=RAG  要点 A=0/1  B=1/1  耗时 A= 1.42s B= 3.37s
+[OK] K02 knowledge  路由=RAG  要点 A=0/1  B=1/1  耗时 A= 2.88s B= 2.29s
+[OK] K03 knowledge  路由=RAG  要点 A=0/4  B=4/4  耗时 A= 1.34s B= 1.39s
+[OK] K04 knowledge  路由=RAG  要点 A=0/2  B=2/2  耗时 A= 2.36s B= 3.52s
+[OK] K05 knowledge  路由=RAG  要点 A=0/4  B=4/4  耗时 A= 8.27s B= 2.02s
+[OK] K06 knowledge  路由=RAG  要点 A=0/2  B=2/2  耗时 A= 6.91s B= 5.06s
+[OK] K07 knowledge  路由=RAG  要点 A=2/2  B=2/2  耗时 A= 5.18s B= 5.10s
+[OK] K08 knowledge  路由=RAG  要点 A=0/1  B=1/1  耗时 A= 1.16s B= 1.20s
+[OK] K09 knowledge  路由=RAG  要点 A=1/2  B=2/2  耗时 A= 3.69s B= 2.50s
+[OK] K10 knowledge  路由=RAG  要点 A=1/3  B=3/3  耗时 A= 8.36s B= 7.46s
+[OK] K11 knowledge  路由=RAG  要点 A=0/1  B=1/1  耗时 A= 1.74s B= 1.40s
+[OK] K12 knowledge  路由=RAG  要点 A=0/3  B=3/3  耗时 A= 7.69s B= 7.57s
+[OK] I01 irrelevant 路由=通用   要点 A=-    B=-    耗时 A= 2.43s B= 2.73s
+[OK] I02 irrelevant 路由=通用   要点 A=-    B=-    耗时 A= 3.04s B= 4.79s
+[OK] I03 irrelevant 路由=通用   要点 A=-    B=-    耗时 A= 3.16s B= 1.76s
+[OK] I04 irrelevant 路由=通用   要点 A=-    B=-    耗时 A= 2.89s B= 3.75s
+[OK] G01 general    路由=通用   要点 A=2/2  B=2/2  耗时 A= 4.94s B= 7.09s
+[OK] G02 general    路由=通用   要点 A=1/1  B=1/1  耗时 A= 1.47s B= 1.67s
+======================================================================
+# 有/无 RAG 增强问答效果对比实验结果
+
+- 生成时间：2026-11-22 21:55:18
+- 大模型：智谱 API `glm-4-flash`（temperature=0.7）
+- 检索：bge-large-zh-v1.5 向量(0.6) + jieba/BM25 关键词(0.4)，top_k=3
+- 题目数：18（知识库题 12、无关题 4、通用题 2）
+
+## 1. 按题型汇总
+
+| 题型 | 题数 | 无RAG准确率 | 有RAG准确率 | 提升 | 无RAG平均耗时(s) | 有RAG平均耗时(s) |
+|---|---:|---:|---:|---:|---:|---:|
+| 知识库事实题 | 12 | 15.3% | 100.0% | 84.7% | 4.25 | 3.57 |
+| 无关问题 | 4 | — | — | — | 2.88 | 3.26 |
+| 通用问题 | 2 | 100.0% | 100.0% | 0.0% | 3.20 | 4.38 |
+
+> 说明：无关题/通用题无标准要点，准确率栏记为「—」，其效果见第 3、4 节。
+
+## 2. 知识库事实题逐题明细
+
+| 编号 | 知识库 | 问题 | 无RAG | 有RAG | 引用命中 |
+|---|---|---|---|---|---|
+| K01 | 项目 | 这份运维SOP的文档编号是什么？ | 0/1 | 1/1 | 是 |
+| K02 | 项目 | 文档要求的故障恢复SLA承诺时间是多少？ | 0/1 | 1/1 | 是 |
+| K03 | 项目 | 黄金指标包括哪四类？ | 0/4 | 4/4 | 是 |
+| K04 | 项目 | P0级故障的定义示例是什么？ | 0/2 | 2/2 | 是 |
+| K05 | 项目 | 应急工具包本地需要安装哪些工具？ | 0/4 | 4/4 | 是 |
+| K06 | 项目 | Redis连接超时的常见根因和解决方法是什么？ | 0/2 | 2/2 | 是 |
+| K07 | 项目 | 故障排查超过阈值后，K8s环境如何回滚到稳定版本？ | 2/2 | 2/2 | 是 |
+| K08 | 项目 | 5-Whys分析中，数据库连接超时的直接原因是什么？ | 0/1 | 1/1 | 是 |
+| K09 | Agent | ChromaDB适合什么场景？它支持什么向量索引算法？ | 1/2 | 2/2 | 是 |
+| K10 | Agent | 混合检索（Hybrid Search）是如何工作的？ | 1/3 | 3/3 | 是 |
+| K11 | Agent | GLM-4-Flash模型的上下文窗口有多大？ | 0/1 | 1/1 | 是 |
+| K12 | Agent | 构建RAG系统时，文档切片需要注意哪些要点？ | 0/3 | 3/3 | 是 |
+
+## 3. 检索先行路由（无关问题误触发率）
+
+- 无关问题数：4；误判为知识库相关：0 题，误触发率 0.0%
+- 无RAG组出现知识库专有术语（杜撰依据）：0 题
+- 有RAG组出现知识库专有术语：0 题
+
+| 编号 | 问题 | 是否误触发 | 无RAG术语误引 | 有RAG术语误引 |
+|---|---|---|---|---|
+| I01 | 牙痛需要注意什么？ | 否 | 否 | 否 |
+| I02 | 减脂期，晚饭怎么吃比较合适？ | 否 | 否 | 否 |
+| I03 | 番茄可以生吃吗？ | 否 | 否 | 否 |
+| I04 | 失眠应该怎么调理？ | 否 | 否 | 否 |
+
+## 4. 通用问题（RAG 是否劣化）
+
+| 编号 | 问题 | 无RAG要点 | 有RAG要点 | 是否误触发检索 |
+|---|---|---|---|---|
+| G01 | Python中列表和元组的主要区别是什么？ | 2/2 | 2/2 | 否 |
+| G02 | HTTP状态码404表示什么？ | 1/1 | 1/1 | 否 |
+
+## 5. 总体指标
+
+- 路由判定正确率：18/18 = 100.0%
+- 知识库事实题引用命中率：12/12 = 100.0%
+- 知识库事实题平均准确率：无RAG 15.3% → 有RAG 100.0%
+- 全部题目平均耗时：无RAG 3.83s → 有RAG 3.59s（含检索开销）
+
+原始数据：D:\ch4\Efficient\RAGent-Workbench\backend\experiments\results\rag_comparison_raw.json
